@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Flask</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{url_for('index')}}"> Home</a></li>
+            
+            <li><a href="{{url_for('about')}}"> About</a></li>
+             <li>
+                <a href="{{url_for('contact')}}"> About</a></li>
+        </ul>
+    </nav>
+    <!--What we're doing here is defining a block, or an area, that we can inject content into.
+        The difference between the percent sign and the double curly bracket notation that we've used before is that the double curly brackets contain an expression, which is outputting something either to the screen, or, in this case, into our href.
+    -->
+    {% block content%}
+    {%endblock%}
+</body>
+</html>
