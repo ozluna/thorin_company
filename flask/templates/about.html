@@ -3,7 +3,7 @@
 
 
 
-    <h2>About</h2>
+    <h2>{{page_title}}</h2>
     <p>The formation of the group grew out of a meeting Gandalf had with Thorin in Bree which kindled Thorin's
     interest in recapturing his long lost family inheritance. (Thorin's grandfather had been the king of the Lonely 
     Mountain when Smaug came and took it.) Remembering that he had once known an adventurous Hobbit on his travels
@@ -18,7 +18,7 @@
     {%if loop.index % 2!=0%}
     <div class="row featurette">
         <div class="col-md-7">
-        <h3>{{loop.index}} {{member.name}}
+        <h3><a href="/about/{{member.url}}">{{loop.index}}. {{member.name}}</a>
         </h3>
            <p>{{member.description}}</p>
 
@@ -32,7 +32,7 @@
                 <img class="featurette-image img-responsive" src="{{member.image_source}}" alt="Thorin">
             </div>   
             <div class="col-md-7">
-            <h3>{{loop.index}} {{member.name}}
+            <h3><a href="/about/{{member.url}}">{{loop.index}}. {{member.name}}</a>
             </h3>
             <p>{{member.description}}</p>
 
