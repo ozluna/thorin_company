@@ -3,7 +3,7 @@ click==7.1.2
 Flask==0.12.5
 itsdangerous==1.1.0
 Jinja2==2.10.3
-lxml==4.2.6
+lxml==4.6.3
 pipenv==2018.5.18
 virtualenv==16.0.0
 virtualenv-clone==0.3.0
